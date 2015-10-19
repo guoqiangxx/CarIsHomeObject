@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>446DA20A-5541-43B8-9879-1DDDAADF0ECC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CarIsHome</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D426F097ABFC263633527912A115E112ABB50F04</key>
+		<string>https://github.com/guoqiangxx/CarIsHomeObject.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CarIsHome/CarIsHome.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D426F097ABFC263633527912A115E112ABB50F04</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/guoqiangxx/CarIsHomeObject.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D426F097ABFC263633527912A115E112ABB50F04</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D426F097ABFC263633527912A115E112ABB50F04</string>
+			<key>IDESourceControlWCCName</key>
+			<string>%E9%A1%B9%E7%9B%AE%E4%B8%89%E5%84%BF</string>
+		</dict>
+	</array>
+</dict>
+</plist>
