@@ -8,6 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol HeaderViewDelegate <NSObject>
+
+- (void)tapHeaderViewWithCurrentPage:(NSInteger)currentPage;
+
+@end
+
 @interface HeaderView : UIView
+
+- (void)headerViewWithImageURLs:(NSArray *)imageURLs;
+
+@property (nonatomic, weak) id <HeaderViewDelegate>delegate;
+@property (nonatomic, assign) CGFloat scrollTime;
+@property (nonatomic, strong) UIColor *pageColor;
+@property (nonatomic, strong) UIColor *currentPageColor;
 
 @end

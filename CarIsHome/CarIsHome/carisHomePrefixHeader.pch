@@ -8,7 +8,9 @@
 
 #ifndef CarIsHome_carisHomePrefixHeader_pch
 #define CarIsHome_carisHomePrefixHeader_pch
-
+#define TSWidth [UIScreen mainScreen].bounds.size.width
+#define TSHeight [UIScreen mainScreen].bounds.size.height
 #import "AFNetworking.h"
 
+#import "UIImageView+WebCache.h"
 #endif
