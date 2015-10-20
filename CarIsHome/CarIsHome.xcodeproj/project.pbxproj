@@ -625,12 +625,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
 				152799251BD61FBA00188D84 /* SDWebImageDecoder.m in Sources */,
 				152799301BD61FBA00188D84 /* UIView+WebCacheOperation.m in Sources */,
-=======
 				04ED165A1BD6211900F170BF /* TitleScrollView.m in Sources */,
->>>>>>> a1286c2d434faf18849898717f1147ce74e0a7b3
 				152798F81BD5E9BC00188D84 /* Basebase.m in Sources */,
 				152799281BD61FBA00188D84 /* SDWebImageManager.m in Sources */,
 				04ED16411BD5D63100F170BF /* AFHTTPRequestOperation.m in Sources */,
