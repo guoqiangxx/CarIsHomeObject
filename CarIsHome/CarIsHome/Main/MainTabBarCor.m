@@ -16,7 +16,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self setTabBarItemSelect];
+}
+
+- (void)setTabBarItemSelect
+{
+    
+    NSArray *selectImages = @[@"item01_selected",
+                              @"item02_selected",
+                              @"item03_selected",
+                              @"item04_selected",
+                              @"item05_selected"];
+    NSArray *viewCors = self.viewControllers;
+    for (int i = 0; i < viewCors.count; ++i) {
+        
+        UIViewController *viewCor = viewCors[i];
+        UIImage *selectImage = [UIImage imageNamed:selectImages[i]];
+        
+        viewCor.tabBarItem.selectedImage = [selectImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+
+    }
 }
 
 - (void)didReceiveMemoryWarning {

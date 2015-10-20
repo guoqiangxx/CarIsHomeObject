@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar Cor-->
         <scene sceneID="4W2-j2-iVf">
             <objects>
-                <tabBarController id="yO5-hh-dC5" sceneMemberID="viewController">
+                <tabBarController id="yO5-hh-dC5" customClass="MainTabBarCor" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="ZEW-sY-KcM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -29,12 +29,17 @@
         <!--推荐-->
         <scene sceneID="Fbc-jL-0hM">
             <objects>
-                <navigationController id="u6n-eW-MBd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="推荐" id="99c-un-md3"/>
+                <navigationController title="推荐" id="u6n-eW-MBd" customClass="MainNavigationCor" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="item01" id="99c-un-md3">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="nId-Wf-AlU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="6V3-Xd-Ocd" kind="relationship" relationship="rootViewController" id="26S-nW-41S"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kl1-JI-WgD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -53,62 +58,102 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="9yk-x8-Rgv">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="0wH-wj-VH9">
+                            <view key="customView" contentMode="scaleToFill" id="8W3-qn-pmj">
+                                <rect key="frame" x="16" y="5" width="250" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="TG5-to-hLe">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1AP-Tj-x3r">
+                                <rect key="frame" x="205" y="0.0" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="bar_btn_icon_search">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M0c-ez-UFx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1842" y="995"/>
         </scene>
-        <!--论坛-->
+        <!--Main Navigation Cor-->
         <scene sceneID="Esy-nR-Gu0">
             <objects>
-                <navigationController id="nH4-pW-uSq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="论坛" id="Z1b-9J-YnD"/>
+                <navigationController id="nH4-pW-uSq" customClass="MainNavigationCor" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="item02" id="Z1b-9J-YnD">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0pO-4q-BB8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="pit-Nf-qwI" kind="relationship" relationship="rootViewController" id="ngt-GZ-R81"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GDw-uZ-bvZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1465" y="323"/>
         </scene>
-        <!--找车-->
+        <!--Main Navigation Cor-->
         <scene sceneID="zNN-m0-Ytl">
             <objects>
-                <navigationController id="D86-h3-HPE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="找车" id="eXe-Nw-ptm"/>
+                <navigationController id="D86-h3-HPE" customClass="MainNavigationCor" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="item03" id="eXe-Nw-ptm">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tdn-hn-lQI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="Z26-b5-Weu" kind="relationship" relationship="rootViewController" id="lmy-lL-pn4"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ClY-lt-bar" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1066" y="323"/>
         </scene>
-        <!--发现-->
+        <!--Main Navigation Cor-->
         <scene sceneID="Phx-SZ-ObR">
             <objects>
-                <navigationController id="5nN-bi-Vkk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="发现" id="ITm-lH-r2V"/>
+                <navigationController id="5nN-bi-Vkk" customClass="MainNavigationCor" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="item04" id="ITm-lH-r2V">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="D7t-yj-eDg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="nuc-Te-Egm" kind="relationship" relationship="rootViewController" id="mXc-gJ-9Sh"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aPx-bp-fhz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-681" y="323"/>
         </scene>
-        <!--我-->
+        <!--Main Navigation Cor-->
         <scene sceneID="E3Y-4B-hhF">
             <objects>
-                <navigationController id="ge2-Q3-aX4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="我" id="m4Y-DZ-IeJ"/>
+                <navigationController id="ge2-Q3-aX4" customClass="MainNavigationCor" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="item05" id="m4Y-DZ-IeJ">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NRf-CQ-NWS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="uFy-K2-l7z" kind="relationship" relationship="rootViewController" id="OvA-LK-gsA"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XsA-gB-Jpo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -128,6 +173,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="l7B-gE-0X6"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="-1465" y="995"/>
@@ -145,6 +191,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="GBc-Gd-CrX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vgJ-VG-kBv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -163,6 +210,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Aty-zi-lME"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tLl-y2-s4q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -181,12 +229,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="2CS-3B-9rN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8jP-fu-bAZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-294" y="995"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bar_btn_icon_search" width="44" height="44"/>
+        <image name="item01" width="64" height="44"/>
+        <image name="item02" width="64" height="44"/>
+        <image name="item03" width="64" height="44"/>
+        <image name="item04" width="64" height="44"/>
+        <image name="item05" width="64" height="44"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
