@@ -24,6 +24,7 @@
 		04ED164A1BD5D63100F170BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ED16401BD5D63100F170BF /* AppDelegate.m */; };
 		04ED164E1BD5DD3000F170BF /* MainNavigationCor.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ED164D1BD5DD3000F170BF /* MainNavigationCor.m */; };
 		04ED16511BD5DD7300F170BF /* MainTabBarCor.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ED16501BD5DD7300F170BF /* MainTabBarCor.m */; };
+		04ED165A1BD6211900F170BF /* TitleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ED16591BD6211900F170BF /* TitleScrollView.m */; };
 		152798D51BD5E4F100188D84 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 152798D41BD5E4F100188D84 /* BaseViewController.m */; };
 		152798DD1BD5E63500188D84 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 152798DC1BD5E63500188D84 /* MBProgressHUD.m */; };
 		152798E01BD5E67500188D84 /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 152798DF1BD5E67500188D84 /* FindViewController.m */; };
@@ -97,6 +98,8 @@
 		04ED164D1BD5DD3000F170BF /* MainNavigationCor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavigationCor.m; sourceTree = "<group>"; };
 		04ED164F1BD5DD7300F170BF /* MainTabBarCor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarCor.h; sourceTree = "<group>"; };
 		04ED16501BD5DD7300F170BF /* MainTabBarCor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarCor.m; sourceTree = "<group>"; };
+		04ED16581BD6211900F170BF /* TitleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleScrollView.h; sourceTree = SOURCE_ROOT; };
+		04ED16591BD6211900F170BF /* TitleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleScrollView.m; sourceTree = SOURCE_ROOT; };
 		152798A51BD5CA8F00188D84 /* carisHomePrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = carisHomePrefixHeader.pch; sourceTree = "<group>"; };
 		152798D31BD5E4F100188D84 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		152798D41BD5E4F100188D84 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
@@ -371,6 +374,8 @@
 		04ED16351BD5D63100F170BF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04ED16581BD6211900F170BF /* TitleScrollView.h */,
+				04ED16591BD6211900F170BF /* TitleScrollView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -620,8 +625,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				152799251BD61FBA00188D84 /* SDWebImageDecoder.m in Sources */,
 				152799301BD61FBA00188D84 /* UIView+WebCacheOperation.m in Sources */,
+=======
+				04ED165A1BD6211900F170BF /* TitleScrollView.m in Sources */,
+>>>>>>> a1286c2d434faf18849898717f1147ce74e0a7b3
 				152798F81BD5E9BC00188D84 /* Basebase.m in Sources */,
 				152799281BD61FBA00188D84 /* SDWebImageManager.m in Sources */,
 				04ED16411BD5D63100F170BF /* AFHTTPRequestOperation.m in Sources */,
